@@ -24,8 +24,14 @@
 <a href="#investment" id="t-nav-investment">Investment Advisory</a>
 <a href="#education" id="t-nav-education">Executive Education</a>
 <a href="#team" id="t-nav-people">Leadership</a>
-<a href="login.html" onmouseout="this.style.background='transparent'" onmouseover="this.style.background='rgba(247,188,21,0.1)'" style="background:transparent;border:1.5px solid rgba(247,188,21,0.5);color:var(--gold) !important;padding:9px 18px;border-radius:2px;font-weight:700 !important;letter-spacing:0.1em !important;transition:all 0.2s !important;">Member Login</a>
+<a class="nav-member-login" href="login.html">Member Login</a>
 <a class="nav-cta" href="#contact" id="t-nav-contact">Contact</a>
+</div>
+<div class="nav-mobile-actions">
+<a class="nav-mobile-login" href="login.html">Member Login</a>
+<button aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu" class="mobile-menu-toggle" id="mobile-menu-toggle" type="button">
+<span></span><span></span><span></span>
+</button>
 </div>
 <div id="lang-toggle-wrap" style="position:relative;margin-left:24px;">
 <button id="lang-toggle-btn" style="background:none;border:1.5px solid rgba(255,255,255,0.35);border-radius:3px;padding:5px 13px;cursor:pointer;font-family:'Saira',sans-serif;font-size:0.72rem;font-weight:700;letter-spacing:0.1em;color:rgba(255,255,255,0.9);text-transform:uppercase;transition:all 0.2s;display:flex;align-items:center;gap:6px;white-space:nowrap;">
@@ -39,6 +45,17 @@
 </div>
 
 </nav>
+<div class="mobile-menu" id="mobile-menu" hidden>
+<a href="login.html">Member Login</a>
+<a href="#services" id="mobile-nav-capabilities">Capabilities</a>
+<a href="#about" id="mobile-nav-platform">Platform</a>
+<a href="#sports" id="mobile-nav-sports">Sports Advisory</a>
+<a href="#investment" id="mobile-nav-investment">Investment Advisory</a>
+<a href="#education" id="mobile-nav-education">Executive Education</a>
+<a href="#team" id="mobile-nav-leadership">Leadership</a>
+<a href="#contact" id="mobile-nav-contact">Contact</a>
+</div>
+
 <!-- HERO -->
 <section class="hero">
 <div class="hero-content">
@@ -598,5 +615,6 @@
 </div>
 </footer>
 
-<script src="assets/js/index.js"></script></body>
+<script src="assets/js/index.js"></script>
+<script src="assets/js/mobile-nav.js"></script></body>
 </html>
